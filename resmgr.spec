@@ -7,6 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.lst.de/pub/people/okir/resmgr/%{name}-%{version}.tar.bz2
 # Source0-md5:	c231de6ca7d59265eeeccdfcb8090801
+Patch0:		%{name}-va_list.patch
 URL:		http://www.lst.de/~okir/resmgr/
 BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,6 +36,7 @@ Pliki nag³ówkowe biblioteki resmgr.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
