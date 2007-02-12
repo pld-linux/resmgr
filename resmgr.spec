@@ -1,5 +1,5 @@
 Summary:	Resource Manager
-Summary(pl.UTF-8):   Zarządca zasobów
+Summary(pl.UTF-8):	Zarządca zasobów
 Name:		resmgr
 Version:	1.0
 Release:	1
@@ -24,7 +24,7 @@ programy do skanowania, odtwarzacze MIDI.
 
 %package devel
 Summary:	Header files for resmgr library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki resmgr
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki resmgr
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
