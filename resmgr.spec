@@ -1,5 +1,5 @@
 Summary:	Resource Manager
-Summary(pl):	Zarz眃ca zasob體
+Summary(pl.UTF-8):   Zarz膮dca zasob贸w
 Name:		resmgr
 Version:	1.0
 Release:	1
@@ -17,22 +17,22 @@ The purpose of this Resource Manager is to provide a common framework
 for applications such as serial terminal emulators, CD writers,
 scanner software, MIDI players.
 
-%description -l pl
-Celem tego zarz眃cy zasob體 jest dostarczenie wsp髄nego szkieletu dla
+%description -l pl.UTF-8
+Celem tego zarz膮dcy zasob贸w jest dostarczenie wsp贸lnego szkieletu dla
 aplikacji takich jak emulatory terminali szeregowych, nagrywarki CD,
 programy do skanowania, odtwarzacze MIDI.
 
 %package devel
 Summary:	Header files for resmgr library
-Summary(pl):	Pliki nag丑wkowe biblioteki resmgr
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe biblioteki resmgr
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for resmgr library.
 
-%description devel -l pl
-Pliki nag丑wkowe biblioteki resmgr.
+%description devel -l pl.UTF-8
+Pliki nag艂贸wkowe biblioteki resmgr.
 
 %prep
 %setup -q
