@@ -2,7 +2,7 @@ Summary:	Resource Manager
 Summary(pl.UTF-8):	Zarządca zasobów
 Name:		resmgr
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.lst.de/pub/people/okir/resmgr/%{name}-%{version}.tar.bz2
