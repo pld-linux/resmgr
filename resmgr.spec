@@ -9,6 +9,7 @@ Source0:	ftp://ftp.lst.de/pub/people/okir/resmgr/%{name}-%{version}.tar.bz2
 # Source0-md5:	c231de6ca7d59265eeeccdfcb8090801
 Patch0:		%{name}-va_list.patch
 Patch1:		%{name}-syslog.patch
+Patch2:		%{name}-MAX_PATH.patch
 URL:		http://www.lst.de/~okir/resmgr/
 BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,11 +40,12 @@ Pliki nagłówkowe biblioteki resmgr.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -D_GNU_SOURCE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
