@@ -2,7 +2,7 @@ Summary:	Resource Manager
 Summary(pl.UTF-8):	Zarządca zasobów
 Name:		resmgr
 Version:	1.0
-Release:	5
+Release:	6
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.lst.de/pub/people/okir/resmgr/%{name}-%{version}.tar.bz2
@@ -10,6 +10,7 @@ Source0:	ftp://ftp.lst.de/pub/people/okir/resmgr/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-va_list.patch
 Patch1:		%{name}-syslog.patch
 Patch2:		%{name}-MAX_PATH.patch
+Patch3:		sysmacros.patch
 URL:		http://www.lst.de/~okir/resmgr/
 BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,6 +42,7 @@ Pliki nagłówkowe biblioteki resmgr.
 %patch -P0 -p1
 %patch -P1 -p1
 %patch -P2 -p1
+%patch -P3 -p1
 
 %build
 %{__make} \
